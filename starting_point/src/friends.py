@@ -25,10 +25,11 @@ def total_money(people):
     return sum
 
 def l_money(lender,lendee,amount):
-    lender["monies"] - amount
-    lendee["monies"] + amount
-    return lender["monies"]
-    return lendee["monies"]
+    lender["monies"] = lender["monies"] - amount
+    lendee["monies"] = lendee['monies'] + amount 
+    return lender['monies']
+    return lendee['monies']
+    
 
 def all_favourite_foods(people):
     
